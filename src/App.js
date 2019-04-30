@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.css';
-import { Segment, Header, Icon } from "semantic-ui-react";
+import { Segment, Header, Icon, Divider } from "semantic-ui-react";
 import TodoItem from "./components/TodoItem";
 import todosData from "./components/todosData";
+import MyHeader from "./components/MyHeader";
+import MemeGenerator from "./components/MemeGenerator"
 
 // https://reactjs.org/blog/2018/03/29/react-v-16-3.html#component-lifecycle-changes
 
@@ -47,7 +49,15 @@ class App extends React.Component {
            {toDoComponents}
         </Segment.Group>
         </Segment>
-      
+
+      <Divider></Divider>
+
+      <Segment compact>
+        <MyHeader />
+        <MemeGenerator />
+      </Segment>
+      <br />
+      <br />
       </>
     );
   }

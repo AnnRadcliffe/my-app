@@ -10,3 +10,9 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+
+/**
+ * Create the boilerplate to get React to render something on the screen
+ * Render an <App /> component, which you'll need to create separately
+ */
